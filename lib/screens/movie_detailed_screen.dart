@@ -217,7 +217,12 @@ class _MovieDetailedScreenState extends State<MovieDetailedScreen> {
                 ],
               );
             } else {
-              return const Text('error');
+              return Column(
+                children: [
+                  SizedBox(height: 50,),
+                  Center(child: CircularProgressIndicator(color: Colors.blueGrey[600],)),
+                ],
+              );
             }
           },
         ),
